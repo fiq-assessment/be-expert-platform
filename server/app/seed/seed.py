@@ -8,8 +8,8 @@ import sys
 sys.path.append('..')
 from app.core.auth import hash_password
 
-MONGODB_URI = "mongodb://localhost:27017"
-DB_NAME = "interview_db"
+MONGODB_URI = "mongodb://fiqtestuser:F9dAd0e0w!!%40@mysql1.interview.servers.fulfillmentiq.com:27017/fiqtest?authMechanism=SCRAM-SHA-1&authSource=admin"
+DB_NAME = "fiqtest"
 
 async def seed_data():
     client = AsyncIOMotorClient(MONGODB_URI)
